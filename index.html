@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#121512">
+  <title>ZHANG Yongsen / CV on air</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <main class="player-shell">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="回到首页"><span class="brand-mark">ZY</span><span>CV / 01</span></a>
+      <div class="top-status"><span class="status-dot"></span><span>AVAILABLE FOR A GOOD PROJECT</span></div>
+      <span class="serial">YS-1994-08</span>
+    </header>
+
+    <section class="hero" id="top">
+      <div class="intro-copy">
+        <p class="eyebrow">A PERSONAL RECORD / 张咏森的个人档案</p>
+        <h1>ZHANG<br><em>Yongsen</em></h1>
+        <p class="role">Product-minded designer &amp; developer<br><span>把复杂的东西做得清楚、好用、还有一点点好玩。</span></p>
+        <div class="hero-actions">
+          <button class="play-main" id="playMain" type="button"><span class="play-icon">▶</span><span>PLAY INTRO</span></button>
+          <a class="text-link" href="mailto:yongsenzhang@ln.hk">LET'S TALK <span>↗</span></a>
+        </div>
+      </div>
+
+      <div class="disc-stage" aria-label="简历 CD 播放器">
+        <div class="disc-halo"></div>
+        <div class="disc" id="disc">
+          <div class="disc-shine"></div>
+          <div class="disc-label"><span>ZY</span><small>CV MIX<br>VOL.01</small></div>
+          <div class="disc-hole"></div>
+        </div>
+        <div class="tonearm" id="tonearm"><div class="needle"></div></div>
+        <div class="disc-caption"><span>PRESS PLAY</span><span>33⅓ RPM</span></div>
+      </div>
+    </section>
+
+    <section class="now-playing" aria-live="polite">
+      <div class="track-meta"><span class="live-indicator">● LIVE</span><span id="trackNumber">TRACK 01 / 04</span></div>
+      <div class="track-title"><strong id="trackTitle">Intro / 关于我</strong><span id="trackSubtitle">A short signal from the studio</span></div>
+      <div class="visualizer" id="visualizer" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="time"><span id="currentTime">00:00</span><span id="totalTime">01:12</span></div>
+      <input class="progress" id="progress" type="range" min="0" max="72" value="0" aria-label="播放进度">
+    </section>
+
+    <nav class="tracklist" aria-label="简历章节">
+      <button class="track active" type="button" data-track="0"><span class="track-index">01</span><span><b>INTRO</b><small>关于我</small></span><span class="track-arrow">↗</span></button>
+      <button class="track" type="button" data-track="1"><span class="track-index">02</span><span><b>WORK LOG</b><small>工作经历</small></span><span class="track-arrow">↗</span></button>
+      <button class="track" type="button" data-track="2"><span class="track-index">03</span><span><b>SELECTED CUTS</b><small>精选项目</small></span><span class="track-arrow">↗</span></button>
+      <button class="track" type="button" data-track="3"><span class="track-index">04</span><span><b>CONTACT</b><small>联系我</small></span><span class="track-arrow">↗</span></button>
+    </nav>
+
+    <section class="content-panel" id="contentPanel">
+      <div class="panel-label"><span id="panelCode">A01</span><span id="panelType">PROFILE NOTE</span></div>
+      <div class="panel-content" id="panelContent">
+        <p class="quote">“我相信好的设计，应该像一首耐听的歌：第一遍抓住你，之后每一遍都能发现新的细节。”</p>
+        <div class="fact-grid"><div><span>BASE</span><strong>Hong Kong / CN</strong></div><div><span>FOCUS</span><strong>Product · Brand · Code</strong></div><div><span>STATUS</span><strong>Open to collaboration</strong></div></div>
+      </div>
+    </section>
+
+    <footer class="footer"><span>© 2026 ZHANG YONGSEN</span><span>TURN UP THE VOLUME <span class="volume-bars">▮ ▮ ▮</span></span><span>SCROLL TO EXPLORE ↓</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
